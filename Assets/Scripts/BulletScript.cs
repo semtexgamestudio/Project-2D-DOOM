@@ -13,7 +13,7 @@ public class BulletScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        transform.position = new Vector2(transform.position.x + (projectSpeed * Time.deltaTime), transform.position.y);
+        
 	}
 
     IEnumerator CommitSelfDeletus()

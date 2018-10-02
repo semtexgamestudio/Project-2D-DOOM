@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour {
 
     public GameObject prefab;
     private PlayerMovement player;
-    public Transform mouseFollow;
+    public Transform barrel;
     private bool isCooledDown = true;
 
 	// Use this for initialization
@@ -20,7 +20,9 @@ public class Shooting : MonoBehaviour {
         float click1 = Input.GetAxis("Fire1");
         if(click1 > 0 && isCooledDown)
         {
-            Instantiate(prefab, transform.position, mouseFollow.rotation);
+            GameObject bullet;
+            bullet = Instantiate(prefab, barrel.position, barrel.rotation);
+            bullet.GetComponent<Rigidbody2D>().AddForce(barrel.forward * 5000);
             isCooledDown = false;
             StartCoroutine(CoolDown());
         }
@@ -28,7 +30,7 @@ public class Shooting : MonoBehaviour {
 
     IEnumerator CoolDown()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
         isCooledDown = true;
     }
 }
