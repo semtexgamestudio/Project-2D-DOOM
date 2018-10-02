@@ -16,7 +16,6 @@ public class Shooting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.LookAt(new Vector2(mouseFollow.transform.position.x, mouseFollow.transform.y));
 
         float click1 = Input.GetAxis("Fire1");
         if(click1 > 0 && isCooledDown)
