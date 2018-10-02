@@ -1,0 +1,35 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Shooting : MonoBehaviour {
+
+    public GameObject prefab;
+    private PlayerMovement player;
+    public Transform mouseFollow;
+    private bool isCooledDown = true;
+
+	// Use this for initialization
+	void Start () {
+        player = GameObject.Find("Player").GetComponent<PlayerMovement>();
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        transform.LookAt(new Vector2(mouseFollow.transform.position.x, mouseFollow.transform.y));
+
+        float click1 = Input.GetAxis("Fire1");
+        if(click1 > 0 && isCooledDown)
+        {
+            Instantiate(prefab, transform.position, mouseFollow.rotation);
+            isCooledDown = false;
+            StartCoroutine(CoolDown());
+        }
+	}
+
+    IEnumerator CoolDown()
+    {
+        yield return new WaitForSeconds(1);
+        isCooledDown = true;
+    }
+}
