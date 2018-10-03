@@ -11,11 +11,6 @@ public class BulletScript : MonoBehaviour {
         StartCoroutine(CommitSelfDeletus());
     }
 
-    // Update is called once per frame
-    void Update () {
-        
-	}
-
     IEnumerator CommitSelfDeletus()
     {
         yield return new WaitForSeconds(2);

@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     public GameObject go;
 
     public BoxCollider2D boxcoll;
+    public Animator anim;
 
     private bool isGrounded = true;
 
@@ -21,6 +22,17 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
         float x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         // float jump = Input.GetAxis("Jump") * jumpSpeed * Time.deltaTime;
+
+        if(x > 0) {
+            anim.SetBool("LeftMove", false);
+            anim.SetBool("RightMove", true);
+        } else if(x < 0) {
+            anim.SetBool("RightMove", false);
+            anim.SetBool("LeftMove", true);
+        } else {
+            anim.SetBool("RightMove", false);
+            anim.SetBool("LeftMove", false);
+        }
 
         transform.position = new Vector2(transform.position.x + x, transform.position.y);
 
