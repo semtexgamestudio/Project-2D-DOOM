@@ -8,7 +8,13 @@ public class BulletScript : MonoBehaviour {
 
     private void Start()
     {
+        transform.eulerAngles = new Vector3(transform.localRotation.x, transform.localRotation.y, GameObject.Find("Player").GetComponent<Shooting>().barrel.localRotation.z);
         StartCoroutine(CommitSelfDeletus());
+    }
+
+    private void Update()
+    {
+        transform.position += -transform.right;
     }
 
     IEnumerator CommitSelfDeletus()

@@ -21,7 +21,7 @@ public class Shooting : MonoBehaviour {
         if(click1 > 0 && isCooledDown)
         {
             GameObject bullet;
-            bullet = Instantiate(prefab, player.transform.position, barrel.rotation);
+            bullet = Instantiate(prefab, barrel.position, barrel.rotation);
             isCooledDown = false;
             StartCoroutine(CoolDown());
         }
