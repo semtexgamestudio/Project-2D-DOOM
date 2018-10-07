@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         float x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         // float jump = Input.GetAxis("Jump") * jumpSpeed * Time.deltaTime;
 

@@ -29,7 +29,7 @@ public class Shooting : MonoBehaviour {
 
     IEnumerator CoolDown()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         isCooledDown = true;
     }
 }

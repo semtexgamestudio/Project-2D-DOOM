@@ -8,13 +8,12 @@ public class BulletScript : MonoBehaviour {
 
     private void Start()
     {
-        transform.eulerAngles = new Vector3(transform.localRotation.x, transform.localRotation.y, GameObject.Find("Player").GetComponent<Shooting>().barrel.localRotation.z);
-        StartCoroutine(CommitSelfDeletus());
+           StartCoroutine(CommitSelfDeletus());
     }
 
     private void Update()
     {
-        transform.position += -transform.right;
+        transform.position += -transform.up;
     }
 
     IEnumerator CommitSelfDeletus()
@@ -22,4 +21,11 @@ public class BulletScript : MonoBehaviour {
         yield return new WaitForSeconds(2);
         Destroy(this.gameObject);
     }
+
+	public void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.tag == "Crawler") {
+			coll.gameObject.GetComponent<CrawlerScript> ().Hit ();
+			
+		}
+	}
 }

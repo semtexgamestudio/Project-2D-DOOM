@@ -8,6 +8,8 @@ public class CamMovement : MonoBehaviour {
 
     private Vector3 offset;
 
+	public float shakeSpeed;
+
     void Start()
     {
         offset = transform.position - player.transform.position;
