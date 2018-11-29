@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    public bool isMelee;
+
 	// Use this for initialization
 	void Start () {
 		Cursor.visible = false;

@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: 692099ec2e2d5f845ba0ba6b52e66e19
+guid: 5119bbcf636fc314a996abe3ceae4c33
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: selection tiles (gun and sword)_0
+    21300002: selection tiles (gun and sword)_1
+    21300004: selection tiles (gun and sword)_2
+    21300006: selection tiles (gun and sword)_3
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -31,7 +35,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -91,11 +95,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: selection tiles (gun and sword)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1441
+        height: 1425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32dad60bbecf61a4584d2e7b1c49302e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection tiles (gun and sword)_1
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 0
+        width: 1440
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc3513082f53644497b0342f8f7793e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection tiles (gun and sword)_2
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1494
+        width: 1435
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62466240296d16c4a946f80babf7a692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection tiles (gun and sword)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1494
+        width: 1440
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba6bb4d61b359140a5f68dedaeb66db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cbda9c0ea2afa2c43a3df0302e4bad30
+    spriteID: f0c863373c8780f4f8d2f52712ae99c5
     vertices: []
     indices: 
     edges: []

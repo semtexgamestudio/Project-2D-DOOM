@@ -5,6 +5,19 @@ TextureImporter:
     21300000: walking ani skin crawler test_0
     21300002: walking ani skin crawler test_1
     21300004: walking ani skin crawler test_2
+    21300006: walking ani skin crawler test_3
+    21300008: walking ani skin crawler test_4
+    21300010: walking ani skin crawler test_5
+    21300012: walking ani skin crawler test_6
+    21300014: walking ani skin crawler test_7
+    21300016: walking ani skin crawler test_8
+    21300018: walking ani skin crawler test_9
+    21300020: walking ani skin crawler test_10
+    21300022: walking ani skin crawler test_11
+    21300024: walking ani skin crawler test_12
+    21300026: walking ani skin crawler test_13
+    21300028: walking ani skin crawler test_14
+    21300030: walking ani skin crawler test_15
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -99,10 +112,10 @@ TextureImporter:
       name: walking ani skin crawler test_0
       rect:
         serializedVersion: 2
-        x: 859
-        y: 19
-        width: 405
-        height: 532
+        x: 466
+        y: 251
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,7 +123,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0afbd36cd3e4dd64e887a550725714fb
+      spriteID: 1d6f3fa05c69d7946988aef60589bb62
       vertices: []
       indices: 
       edges: []
@@ -119,10 +132,10 @@ TextureImporter:
       name: walking ani skin crawler test_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 19
-        width: 405
-        height: 532
+        x: 5
+        y: 6
+        width: 182
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +143,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3eefcddf762074459446487cf9fa269
+      spriteID: 0b0d78ce300967b4e9dcc0dcd8cabdf0
       vertices: []
       indices: 
       edges: []
@@ -139,10 +152,10 @@ TextureImporter:
       name: walking ani skin crawler test_2
       rect:
         serializedVersion: 2
-        x: 440
-        y: 19
-        width: 405
-        height: 532
+        x: 210
+        y: 181
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,7 +163,267 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd42c80843f010d4a8e48bf46117ec60
+      spriteID: c9267cb33a9a3074f853ab439296877d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 157
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77669d7ab372464095bd0a531983ff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 163
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012b66135387ed743af6fdb235250bea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_5
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 6
+        width: 163
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c0c66aa962f5c46af607809a6b38fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_6
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 6
+        width: 157
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667a42dceb3a77e47a2cde92da843bfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_7
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 6
+        width: 152
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d9173303dd56f4aa42b33aed9e7c72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_8
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 6
+        width: 157
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1376f2e8a2bac49bba8b21ab1c4e43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_9
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 6
+        width: 157
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8384e02bc29ba24c9c886ba59ffe825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2b5507c669ff549af93f7b0453a9a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_11
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32de88546cb4fc4882fba87007953bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_12
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 29
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bf33f804707d9489dc482a3e0c8428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_13
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 18
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc2082d3b64bbd4fb1f537921b0152b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_14
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d78c8abe9f92b49b8d045751188717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking ani skin crawler test_15
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f4d6c8491f04740a29bd072d4a1e88
       vertices: []
       indices: 
       edges: []
@@ -158,7 +431,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7818cc4220a3c4645bfee2120070a301
+    spriteID: 536448fec06cb214fa6c1704a40e2d4a
     vertices: []
     indices: 
     edges: []

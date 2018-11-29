@@ -8,18 +8,31 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpSpeed;
     public GameObject go;
 
+    private GameManager gm;
     public BoxCollider2D boxcoll;
     public Animator anim;
+    public SpriteRenderer weapon;
+
+    public Sprite[] weapons;
 
     private bool isGrounded = true;
 
 	// Use this for initialization
 	void Start () {
         boxcoll = GetComponent<BoxCollider2D>();
+        gm = GameObject.Find("_GM").GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (gm.isMelee)
+        {
+            weapon.sprite = weapons[0];
+        } else
+        {
+            weapon.sprite = weapons[1];
+        }
 
         float x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         // float jump = Input.GetAxis("Jump") * jumpSpeed * Time.deltaTime;
@@ -46,6 +59,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.S))
         {
             transform.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, -jumpSpeed - 15, 0), ForceMode2D.Impulse);
+            Camera.main.GetComponent<CamMovement>().speed = 45;
             isGrounded = false;
         }
 
@@ -56,6 +70,7 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.tag == "Platform")
         {
             isGrounded = true;
+            Camera.main.GetComponent<CamMovement>().speed = 23;
         }
     }
 }

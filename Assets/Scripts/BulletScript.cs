@@ -25,7 +25,7 @@ public class BulletScript : MonoBehaviour {
 	public void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "Crawler") {
 			coll.gameObject.GetComponent<CrawlerScript> ().Hit ();
-			
+            Destroy(this.gameObject);
 		}
 	}
 }

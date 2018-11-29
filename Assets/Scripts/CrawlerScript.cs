@@ -23,7 +23,9 @@ public class CrawlerScript : MonoBehaviour {
 		spriteRenderer = transform.GetComponent<SpriteRenderer> ();
 		player = GameObject.Find ("Player").GetComponent<Transform>();
 		rb = transform.GetComponent<Rigidbody2D> ();
-	}
+        posRight = transform.parent.Find("rightPos");
+        posLeft = transform.parent.Find("leftPos");
+    }
 
 	// Update is called once per frame
 	void LateUpdate () {
@@ -59,14 +61,31 @@ public class CrawlerScript : MonoBehaviour {
 	}
 
 	public void Hit(){
-		
-	}
+        Camera.main.GetComponent<CamMovement>().Hit();
+        Destroy(this.gameObject);
+    }
 
 	void OnTriggerEnter2D(Collider2D coll){
-		if (coll.gameObject.name == posLeft.name) {
+		if (coll.gameObject == posLeft.gameObject) {
 			isLeft = false;
-		} else if (coll.gameObject.name == posRight.name) {
+		} else if (coll.gameObject == posRight.gameObject) {
 			isLeft = true;
 		}
 	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == player.name)
+        {
+            if(player.GetComponent<Shooting>().isAttack == true)
+            {
+                Hit();
+            }
+        }
+
+        if (collision.gameObject.tag == "Crawler")
+        {
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+        }
+    }
 }
