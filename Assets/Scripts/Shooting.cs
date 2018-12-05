@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour {
 
+    // Sets variables
     public GameObject prefab;
     public Transform barrel;
     public GameManager gm;
     public int attackLaunch = 5;
     public bool isAttack;
-
+    
+    // Private variables
     private bool isCooledDown = true;
     private PlayerMovement player;
+    bool muzzle;
 
     // Use this for initialization
     void Start () {
+        // Grabs components to GM and PlayerMovement
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
         gm = GameObject.Find("_GM").GetComponent<GameManager>();
 	}
@@ -22,12 +26,16 @@ public class Shooting : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        // click1 detects Fire1 axis in Unity
         float click1 = Input.GetAxis("Fire1");
+
+        // if click1 was pressed and cooled down and not holding a melee weapon
         if(click1 > 0 && isCooledDown && !gm.isMelee)
         {
             GameObject bullet;
             bullet = Instantiate(prefab, barrel.position, barrel.rotation);
             isCooledDown = false;
+            muzzle = true;
             StartCoroutine(CoolDown());
         } else if (click1 > 0 && isCooledDown && gm.isMelee)
         {
@@ -50,8 +58,9 @@ public class Shooting : MonoBehaviour {
 
     IEnumerator CoolDown()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         isCooledDown = true;
+        muzzle = false;
     }
 
     IEnumerator AttackOver()

@@ -10,10 +10,7 @@ public class ArmScript : MonoBehaviour {
     Transform target;
     int strength = 5;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
+    public SpriteRenderer gun;
 	
 	// Update is called once per frame
 	void Update () {
@@ -26,6 +23,14 @@ public class ArmScript : MonoBehaviour {
         mousePos.y = mousePos.y - objectPos.y;
 
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+        if(angle >= 100)
+        {
+            gun.flipX = true;
+        } else
+        {
+            gun.flipX = false;
+        }
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 }

@@ -11,9 +11,6 @@ public class PlayerMovement : MonoBehaviour {
     private GameManager gm;
     public BoxCollider2D boxcoll;
     public Animator anim;
-    public SpriteRenderer weapon;
-
-    public Sprite[] weapons;
 
     private bool isGrounded = true;
 
@@ -25,14 +22,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (gm.isMelee)
-        {
-            weapon.sprite = weapons[0];
-        } else
-        {
-            weapon.sprite = weapons[1];
-        }
 
         float x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         // float jump = Input.GetAxis("Jump") * jumpSpeed * Time.deltaTime;

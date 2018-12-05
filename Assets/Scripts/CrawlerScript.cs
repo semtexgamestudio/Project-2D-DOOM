@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(BoxCollider2D))]
@@ -17,7 +18,12 @@ public class CrawlerScript : MonoBehaviour {
 	public float enemySpeed, enemySpotted;
 	private Transform player;
 
-	float step;
+    public int health;
+    public Image healthbar;
+    public float healthScale;
+    float oghealth;
+
+    float step;
 
 	void Start(){
 		spriteRenderer = transform.GetComponent<SpriteRenderer> ();
@@ -25,6 +31,10 @@ public class CrawlerScript : MonoBehaviour {
 		rb = transform.GetComponent<Rigidbody2D> ();
         posRight = transform.parent.Find("rightPos");
         posLeft = transform.parent.Find("leftPos");
+
+        oghealth = health;
+
+        healthbar = transform.Find("Health").Find("Healthbar").GetComponent<Image>();
     }
 
 	// Update is called once per frame
@@ -37,7 +47,18 @@ public class CrawlerScript : MonoBehaviour {
 		}
 	}
 
-	void Raycasting(){
+    void Update()
+    {
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+        healthScale = health / oghealth;
+        healthbar.transform.localScale = new Vector3(healthScale, healthbar.transform.localScale.y, healthbar.transform.localScale.z);
+    }
+
+    void Raycasting(){
 		Debug.DrawLine (sightStart.position, sightEnd.position, Color.green);
 		spotted = Physics2D.Linecast (sightStart.position, sightEnd.position, 1 << LayerMask.NameToLayer("Player"));
 	}
@@ -62,7 +83,7 @@ public class CrawlerScript : MonoBehaviour {
 
 	public void Hit(){
         Camera.main.GetComponent<CamMovement>().Hit();
-        Destroy(this.gameObject);
+        health -= 1;
     }
 
 	void OnTriggerEnter2D(Collider2D coll){

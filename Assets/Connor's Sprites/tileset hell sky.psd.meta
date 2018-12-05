@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e46891ebb7d5664193979ee7e373a7b
+guid: fcfaff58beb7d954b96e59f10b22ca0e
 TextureImporter:
   fileIDToRecycleName:
     21300000: tileset hell sky_0
@@ -12,7 +12,7 @@ TextureImporter:
     21300014: tileset hell sky_7
     21300016: tileset hell sky_8
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -30,6 +30,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -40,7 +42,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -290,6 +292,8 @@ TextureImporter:
     edges: []
     weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 1
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
